@@ -12,11 +12,13 @@
             {
                 nArray[i] = int.Parse(Console.ReadLine());
             }
+
             Array.Sort(nArray);
             for (int i = nArray.Length - k ; i < nArray.Length; i++)
             {
                 sum += nArray[i];
             }
+
             Console.WriteLine(sum);
         }
     }

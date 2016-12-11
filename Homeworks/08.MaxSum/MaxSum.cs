@@ -6,7 +6,6 @@ public class Maximalsum
     {
         int length = int.Parse(Console.ReadLine());
         int[] arr = new int[length];
-
         for (int i = 0; i < length; i++)
         {
             arr[i] = int.Parse(Console.ReadLine());
@@ -22,7 +21,6 @@ public class Maximalsum
         {
             currentSum += arr[j];
             end = j;
-
             // if the sum is equal, choose the one with more elements
             if (currentSum > maxSum || (currentSum == maxSum && (end - start) < (j - tmpStart)))
             {
@@ -40,5 +38,4 @@ public class Maximalsum
 
         Console.WriteLine(maxSum);
     }
-
 }

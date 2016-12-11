@@ -12,7 +12,6 @@ public class MegeSort
         int middle = arrayOfNumbers.Length / 2;
         int[] leftArray = new int[middle];
         int[] rightArray = new int[arrayOfNumbers.Length - middle];
-
         for (int i = 0; i < arrayOfNumbers.Length; i++)
         {
             if (i < middle)
@@ -27,7 +26,6 @@ public class MegeSort
 
         leftArray = SplitArray(leftArray);
         rightArray = SplitArray(rightArray);
-
         return MergeArrays(leftArray, rightArray);
     }
 

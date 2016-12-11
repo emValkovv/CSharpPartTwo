@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 class MaximalIncreasing
 {
     static void Main()

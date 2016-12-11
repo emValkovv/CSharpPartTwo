@@ -1,27 +1,4 @@
-﻿//using System;
-
-//    class BinarySearch
-//    {
-//        static void Main()
-//        {
-//            int n = int.Parse(Console.ReadLine());
-//            int[] array = new int[n];
-//            for (int i = 0; i < n; i++)
-//            {
-//                array[i] = int.Parse(Console.ReadLine());
-//            }
-//            int x = int.Parse(Console.ReadLine());
-//            for (int i = 0; i < n; i++)
-//            {
-//                if (array[i] == x)
-//                {
-//                    Console.WriteLine(i);
-//                }
-//            }
-//        }
-//    }
-
-using System;
+﻿using System;
 
 public class BinarySearch
 {
@@ -40,7 +17,6 @@ public class BinarySearch
         int right = arrayOfNumbers.Length - 1;
         int middle = (left + right) / 2;
         bool findNumber = false;                         //checks if there is such number in the array
-
         while (left <= right)
         {
             middle = (left + right) / 2;                     // here we find the middle position in the array

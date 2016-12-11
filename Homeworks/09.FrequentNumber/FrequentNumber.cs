@@ -9,14 +9,12 @@ public class MostFrequentNumber
         int mostFreqNumber = 0, currentNumber = 0;
         int currentBestRepeated = 0;
         int bestRepeated = 0;
-
         for (int i = 0; i < n; i++)
         {
             arrayOfNumbers[i] = int.Parse(Console.ReadLine());
         }
 
         Array.Sort(arrayOfNumbers);
-
         for (int i = 0; i < n; i++)
         {
             currentNumber = arrayOfNumbers[i];
@@ -40,7 +38,6 @@ public class MostFrequentNumber
             }
             currentBestRepeated = 0;
         }
-
 
         Console.WriteLine("{0} ({1} times)", mostFreqNumber, bestRepeated);
     }

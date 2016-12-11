@@ -10,6 +10,7 @@
             {
                 numbers[i] = int.Parse(Console.ReadLine());    
             }
+
             Array.Sort(numbers);
             for (int i = 0; i < n; i++)
             {

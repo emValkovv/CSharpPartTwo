@@ -12,7 +12,6 @@ public class QuickSort
         }
 
         Array.Sort(arrayOfNumbers);
-
         foreach (var number in arrayOfNumbers)
         {
             Console.WriteLine(number);
