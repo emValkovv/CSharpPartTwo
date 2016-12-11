@@ -1,49 +1,47 @@
 ﻿using System;
 
-    class EnglishDigit
+class EnglishDigit
+{
+    static void EnglishWord(int number)
     {
-        static void EnglishWord(int number)
+        string[] words = new string[10] {
+                                            "zero",
+                                            "one",
+                                            "two",
+                                            "three",
+                                            "four",
+                                            "five",
+                                            "six",
+                                            "seven",
+                                            "eight",
+                                            "nine"
+                                        };
+        for (int i = 1; i < words.Length; i++)
         {
-            string[] words = new string[10] {
-                                                "zero",
-                                                "one",
-                                                "two",
-                                                "three",
-                                                "four",
-                                                "five",
-                                                "six",
-                                                "seven",
-                                                "eight",
-                                                "nine"
-                                            };
-            for (int i = 1; i < words.Length; i++)
+
+            if (i / number == 1)
             {
-
-                if (i / number == 1)
-                {
-                    Console.WriteLine(words[i]);
-                    break;
-                }
-                else
-                {
-                    continue;
-
-                }
-            }
-        }
-
-        static void Main()
-        {
-            int read = int.Parse(Console.ReadLine());
-            if (read % 10 != 0)
-            {
-                int number = read % 10;
-                EnglishWord(number);
+                Console.WriteLine(words[i]);
+                break;
             }
             else
             {
-                Console.WriteLine("zero");
+                continue;
             }
-
         }
     }
+
+    static void Main()
+    {
+        int read = int.Parse(Console.ReadLine());
+        if (read % 10 != 0)
+        {
+            int number = read % 10;
+            EnglishWord(number);
+        }
+        else
+        {
+            Console.WriteLine("zero");
+        }
+    }
+}

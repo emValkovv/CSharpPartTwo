@@ -18,6 +18,7 @@ public class IntegerCalculations
     {
         return array.Min();
     }
+
     static int Max(params int[] array)
     {
         return array.Max();
@@ -27,10 +28,12 @@ public class IntegerCalculations
         List<int> list = array.ToList();
         return list.Average();
     }
+
     static long Sum(params int[] array)
     {
         return array.Sum();
     }
+
     static long Product(params int[] array)
     {
         long product = 1;
@@ -38,6 +41,7 @@ public class IntegerCalculations
         {
             product *= item;
         }
+
         return product;
     }
 }

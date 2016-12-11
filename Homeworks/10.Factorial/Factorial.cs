@@ -1,19 +1,22 @@
 ﻿using System;
 using System.Numerics;
-    class Factorial
+
+class Factorial
+{
+    static void NFactorial(int number)
     {
-        static void NFactorial(int number)
+        BigInteger product = 1;
+        for (int i = 1; i <= number; i++)
         {
-            BigInteger product = 1;
-            for (int i = 1; i <= number; i++)
-            {
-                product *= i;
-            }
-            Console.WriteLine(product);
+            product *= i;
         }
-        static void Main()
-        {
-            int number = int.Parse(Console.ReadLine());
-            NFactorial(number);
-        }
+
+        Console.WriteLine(product);
     }
+
+    static void Main()
+    {
+        int number = int.Parse(Console.ReadLine());
+        NFactorial(number);
+    }
+}

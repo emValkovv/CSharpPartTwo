@@ -24,6 +24,5 @@
             int y = int.Parse(numbers[1]);
             int z = int.Parse(numbers[2]);
             GetMax(x, y, z);
-
         }
     }

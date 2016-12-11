@@ -9,8 +9,6 @@ public class NumbersAsArray
         var input = Console.ReadLine().Split(' ').Select(s => int.Parse(s)).ToArray();
         int[] resultArray = new int[ArrayLength(input[0], input[1])];
         int length = ArrayLength(input[0], input[1]);
-        //int[] firstArrayOfNumbers = Console.ReadLine().Split(' ').Select(s => int.Parse(s)).ToArray();
-        //int[] secondArrayOfNumbers = Console.ReadLine().Split(' ').Select(s => int.Parse(s)).ToArray();
         var firstArrayOfNumbers = Console.ReadLine().Split(' ').Select(s => int.Parse(s)).ToList();
         var secondArrayOfNumbers = Console.ReadLine().Split(' ').Select(s => int.Parse(s)).ToList();
         Console.WriteLine(string.Join(" ", AddLists(firstArrayOfNumbers, secondArrayOfNumbers, length)));
@@ -18,7 +16,6 @@ public class NumbersAsArray
 
     public static int[] AddLists(List<int> firstArray, List<int> secondArray, int length)
     {
-        //List<int> resultArray = new List<int>();
         var resultArray = new int[length];
         EqualizeLists(firstArray, secondArray);
 
@@ -58,7 +55,6 @@ public class NumbersAsArray
     {
         int firstListLength = firstArray.Count;
         int secondListLength = secondArray.Count;
-
         if (firstListLength > secondListLength)
         {
             int numbersToAdd = firstListLength - secondListLength;

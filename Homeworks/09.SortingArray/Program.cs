@@ -6,7 +6,6 @@ class SortingArray
     static void Main(string[] args)
     {
         int length = int.Parse(Console.ReadLine());
-        //decimal[] arrayOfNumbers = { 3, 4, 1, 5, 2, 6 };
         decimal[] arrayOfNumbers = Console.ReadLine().Split(' ').Select(s => decimal.Parse(s)).ToArray();
         SortArray(arrayOfNumbers);
         Console.WriteLine(string.Join(" ", arrayOfNumbers));
