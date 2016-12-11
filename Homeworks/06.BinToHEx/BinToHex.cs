@@ -16,7 +16,6 @@ public class BinToHex
         for (int i = 0; i < number.Length; i += 4)
         {
             binNumber = number.Substring(i, 4);
-
             switch (binNumber)
             {
                 case "0000": hexNumber += "0"; break;
@@ -45,7 +44,6 @@ public class BinToHex
     {
         string trimedZeroes = string.Empty;
         bool zero = true;
-
         foreach (var symbol in input)
         {
             if (zero && symbol == '0')
@@ -62,7 +60,7 @@ public class BinToHex
         return trimedZeroes;
     }
 
-    public static string AddLeadingZeroes(string input) // We receive the number without the leading zeroes, so sometimes we must add them to convert the number
+    public static string AddLeadingZeroes(string input) 
     {
         long length = input.Length;
         long zeroesToAdd = 4 - (length % 4);

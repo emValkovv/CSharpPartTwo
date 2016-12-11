@@ -11,11 +11,11 @@ public class DecToHex
     static string DecimalToHex(long decNumber)
     {
         string hexNumber = string.Empty;
-
         if (decNumber == 0)
         {
             return hexNumber += 0;
         }
+
         while (decNumber > 0)
         {
             switch (decNumber % 16)

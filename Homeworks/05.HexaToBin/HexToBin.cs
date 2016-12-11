@@ -11,7 +11,6 @@ public class HexToBin
     public static string HexToBinary(string hexNumber)
     {
         string binary = string.Empty;
-
         foreach (var symbol in hexNumber)
         {
             switch (symbol)
@@ -42,7 +41,6 @@ public class HexToBin
     {
         string trimedZeroes = string.Empty;
         bool zero = true;
-
         foreach (var symbol in input)
         {
             if (zero && symbol == '0')

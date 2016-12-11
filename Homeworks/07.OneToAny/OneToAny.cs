@@ -1,13 +1,12 @@
 ﻿using System;
 
-public class Program
+public class OneToAny
 {
     static void Main(string[] args)
     {
         string number = Console.ReadLine();
         int fromBase = int.Parse(Console.ReadLine());
         int toBase = int.Parse(Console.ReadLine());
-
         long decimalNumber = ConvertToDecimal(number, fromBase);
         Console.WriteLine(ConvertFromDecimal(decimalNumber, toBase));
     }
@@ -26,6 +25,7 @@ public class Program
                 result += (number[i] - 'A' + 10) * (long)Math.Pow(fromBase, number.Length - i - 1);
             }
         }
+
         return result;
     }
 
@@ -51,6 +51,7 @@ public class Program
                 number /= toBase;
             }
         }
+
         return result;
     }
 }

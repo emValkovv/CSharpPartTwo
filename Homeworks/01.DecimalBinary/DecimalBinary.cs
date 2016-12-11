@@ -12,11 +12,11 @@ public class DecToBIn
     {
         string binNumber = string.Empty;
         string reverseNumber = string.Empty;
-
         if (decNumber == 0)
         {
             return binNumber += 0;
         }
+
         while (decNumber > 0)
         {
             reverseNumber += decNumber % 2;
@@ -27,6 +27,7 @@ public class DecToBIn
         {
             binNumber += reverseNumber[i];
         }
+
         return binNumber;
     }
 }
