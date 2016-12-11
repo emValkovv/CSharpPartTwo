@@ -1,17 +1,17 @@
 ﻿using System;
 
-    class LeapYear
+class LeapYear
+{
+    static void Main()
     {
-        static void Main()
+        int year = int.Parse(Console.ReadLine());
+        if (DateTime.IsLeapYear(year))
         {
-            int year = int.Parse(Console.ReadLine());
-            if (DateTime.IsLeapYear(year))
-            {
-                Console.WriteLine("Leap");
-            }
-            else
-            {
-                Console.WriteLine("Common");
-            }
+            Console.WriteLine("Leap");
+        }
+        else
+        {
+            Console.WriteLine("Common");
         }
     }
+}
