@@ -78,42 +78,6 @@ public class SequenceInMatrix
             }
         }
         #endregion
-        // diagonal check - right
-
-        //int currentRow = 0;
-        //int currentCol = 1;
-        //currentSequence = 1;
-        //for (int outerRow = 0; outerRow < rows - 1; outerRow++)
-        //{
-        //    currentCol = 0;
-        //    for (int row = 0 + outerRow; row < rows - 1; row++)
-        //    {
-        //        currentRow = 0 + outerRow;
-
-        //        for (int col = 0; col < cols - 1 - row - outerRow; col++)
-        //        {
-        //            Console.WriteLine("{0} {1}", inputArray[currentRow, currentCol],
-        //                inputArray[currentRow + 1, currentCol + 1]);
-        //            if (inputArray[currentRow, currentCol] == inputArray[currentRow + 1,
-        //                currentCol + 1])
-        //            {
-        //                currentSequence++;
-        //            }
-        //            else
-        //            {
-        //                currentSequence = 1;
-        //            }
-
-        //            if (currentSequence > maxSequence)
-        //            {
-        //                maxSequence = currentSequence;
-        //            }
-        //            currentCol++;
-        //            currentRow++;
-        //        }
-        //        currentCol = row + 1;
-        //    }
-        //}
         Console.WriteLine(maxSequence);
     }
 }

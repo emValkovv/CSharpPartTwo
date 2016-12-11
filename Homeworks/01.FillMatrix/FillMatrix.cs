@@ -1,6 +1,5 @@
 ﻿using System;
 
-
     class FillMatrix
     {
         static void Main()
@@ -22,6 +21,7 @@
                         }
                         number += n;
                     }
+
                     for (int i = 0; i < n; i++)
                     {
                         for (int j = 0; j < n; j++)
@@ -30,6 +30,7 @@
                         }
                         Console.WriteLine();
                     }
+
                     break;
                 case 'b':
                     break;

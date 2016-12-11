@@ -15,6 +15,7 @@
                     array[i, j] = int.Parse(Console.ReadLine());
                 }
             }
+
             int sum = 0;
             int sum1 = 0;
             for (int row = 0; row < n - 2; row++)
@@ -28,9 +29,9 @@
                     {
                         sum1 = sum;
                     }
-
                 }
             }
+
             Console.WriteLine(sum1);
         }
     }
